@@ -1,7 +1,12 @@
 // Change background image here
 
 body {
-  background-image: url("https://cdn.shopify.com/s/files/1/0528/3971/0891/files/vecteezy_wave-style-japanese-pattern-background_new.png?v=1662472748");
+
+  @if $background-image != 'default' {
+      background-image: url($background-image);
+    } @else {
+      background-image: url($default-background);
+    } 
   background-size: 1000px;
   /* Make the body a bit lighter */
   background-color: #212121;
@@ -36,18 +41,6 @@ aside.quote .title {
 nav.post-controls .actions .double-button button.has-like .d-icon {
   color: #fff;
 }
-
-/*
-.d-header-icons .icon img.avatar {
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url(https://cdn.discordapp.com/attachments/971520421851697193/971527077369106432/unknown.png?size=4096);
-  width: 40px !important;
-  height: 40px !important;
-  padding-left: 40px;
-  background-size: 40px 40px;
-*/
 
 /* Search */
 .custom-search-banner-wrap {
