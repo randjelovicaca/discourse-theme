@@ -11,9 +11,7 @@ body {
     @if $tile-background == 'true' {
       background-size: auto;
     } @else {
-      background-size: contain;
-      background-repeat: repeat;
-      background-position: center center;
+      background-size: 1000px;
     } 
 	}
   background-color: #212121;
