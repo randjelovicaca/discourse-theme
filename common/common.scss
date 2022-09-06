@@ -2,13 +2,19 @@
 
 body {
 
-  @if $background-image != 'default' {
+  @if $no-background-image == 'false' {
+    @if $background-image != 'default' {
       background-image: url($background-image);
     } @else {
       background-image: url($default-background);
+    }
+    @if $tile-background == 'true' {
+      background-size: auto;
+    } @else {
+      background-size: contain;
+      background-repeat: repeat;
+      background-position: center center;
     } 
-  background-size: 1000px;
-  /* Make the body a bit lighter */
   background-color: #212121;
 }
 
