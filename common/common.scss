@@ -1,7 +1,6 @@
 // Change background image here
 
 body {
-
   @if $no-background-image == 'false' {
     @if $background-image != 'default' {
       background-image: url($background-image);
@@ -13,7 +12,7 @@ body {
     } @else {
       background-size: 1000px;
     } 
-	}
+  }
   background-color: #212121;
 }
 
@@ -158,9 +157,7 @@ pre code {
 
 /* User cards + header that look good */
 .d-header {
-  //  background: #000fff00;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0) !important;
-  // backdrop-filter: blur(1rem);
   top: 4px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
