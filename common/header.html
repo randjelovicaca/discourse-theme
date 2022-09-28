@@ -4,7 +4,6 @@
   console.log(user);
 </script>
 
-
 <script type="text/x-handlebars" data-template-name="components/badge-card">
 {{#if this.displayCount}}
   <a href={{this.url}} title={{i18n "badges.granted" count=this.displayCount}} class="grant-count">{{this.displayCount}}</a>
@@ -26,12 +25,11 @@
   <div class="badge-info">
     <div class="badge-info-item">
       <h3><a href={{this.url}} class="badge-link">{{#if (eq this.badge.name "Legendary Otaku") }}Alex Test{{else}}{{this.badge.name}}{{/if}}</a></h3>
-      <div class="badge-summary">{{html-safe this.summary}}</div>
+      <div class="badge-summary">{{#if (eq this.badge.name "Legendary Otaku") }}<a href="#">{{html-safe this.summary}}</a>{{else}}{{html-safe this.summary}}{{/if}}</div>
     </div>
   </div>
 </div>
 </script>
-
 
 <script type="text/x-handlebars" data-template-name="application">
 <DiscourseRoot>
