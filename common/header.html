@@ -25,7 +25,15 @@
   <div class="badge-info">
     <div class="badge-info-item">
       <h3><a href={{this.url}} class="badge-link">{{this.badge.name}}</a></h3>
-      <div class="badge-summary">{{html-safe this.summary}}</div>
+      <div class="badge-summary">
+	  {{#if (eq this.badge.name "Legendary Otaku") }}
+	  
+	  {{else (eq this.badge.name "Legendary Otaku") }}
+	  
+	  {{else}}
+		<a href="https://shop.theotakubox.com/" target="_blank">{{html-safe this.summary}}</a>
+	  {{/if}}	
+	  </div>
     </div>
   </div>
 </div>
