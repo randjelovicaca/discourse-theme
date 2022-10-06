@@ -18,7 +18,7 @@ body {
 
 /* Make cursor stay normal*/
 body,
-button,div,span,a,
+button,div,span,
 img,svg,
 h1,h2,h3,h4,h5,h6,p,
 summary,
@@ -977,8 +977,4 @@ blockquote {
 .admin-nav {
   background: transparent;
   border-radius: 8px;
-}
-
-.badge-summary a {
-	cursor: pointer;
 }
