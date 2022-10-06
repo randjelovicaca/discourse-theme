@@ -105,60 +105,6 @@
 </div>
 </script>
 
-
-<script type="text/x-handlebars" data-template-name="topic-list-header-column.hbr">
-<th data-sort-order='{{order}}' class='test {{view.className}} topic-list-data' scope="col" {{#if ariaLabel}}aria-label='{{ariaLabel}}'{{/if}} {{#if sortable}}tabindex="0" role="button" aria-pressed='{{view.ariaPressed}}' {{#if view.ariaSort}}aria-sort='{{view.ariaSort}}'{{/if}} {{/if}}>
-  {{~#if canBulkSelect}}
-    {{~#if showBulkToggle}}
-      {{raw "flat-button" class="bulk-select" icon="list" title="topics.bulk.toggle"}}
-    {{/if ~}}
-    {{~#if bulkSelectEnabled}}
-      <span class='bulk-select-topics'>
-        {{~#if canDoBulkActions}}
-          <button class='btn btn-icon no-text bulk-select-actions'>{{d-icon "cog"}}&#8203;</button>
-        {{/if ~}}
-        <button class='btn btn-default bulk-select-all'>{{i18n "topics.bulk.select_all"}}</button>
-        <button class='btn btn-default bulk-clear-all'>{{i18n "topics.bulk.clear_all"}}</button>
-      </span>
-    {{/if ~}}
-  {{/if ~}}
-  <span>{{view.localizedName}}</span>
-  {{~#if view.isSorting}}
-    {{d-icon view.sortIcon}}
-  {{/if ~}}
-</th>
-</script>
-<script type="text/x-handlebars" data-template-name="components/latest-topic-list-item">
-<PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" />
-<div class="topic-poster">
-  <UserLink @user={{this.topic.lastPosterUser}}>
-    {{avatar this.topic.lastPosterUser imageSize="large"}}
-  </UserLink>
-  <UserAvatarFlair @user={{this.topic.lastPosterUser}} />
-</div>
-<div class="main-link test2">
-  <div class="top-row">
-    {{raw "topic-status" topic=this.topic}}
-    {{topic-link this.topic}}
-    {{~#if this.topic.featured_link}}
-      {{topic-featured-link this.topic}}
-    {{/if}}
-    <TopicPostBadges @unreadPosts={{this.topic.unread_posts}} @unseen={{this.topic.unseen}} @url={{this.topic.lastUnreadUrl}} />
-  </div>
-  <div class="bottom-row">
-    {{category-link this.topic.category}}{{discourse-tags this.topic mode="list"}}{{! intentionally inline to avoid whitespace}}
-  </div>
-</div>
-<div class="topic-stats">
-  {{raw "list/posts-count-column" topic=this.topic tagName="div"}}
-  <div class="topic-last-activity">
-    <a href={{this.topic.lastPostUrl}} title={{this.topic.bumpedAtTitle}}>{{format-date this.topic.bumpedAt format="tiny" noTitle="true"}}</a>
-  </div>
-</div>
-</script>
-
-
-
 <script type="text/x-handlebars" data-template-name="application">
 <DiscourseRoot>
   <a href="#main-container" id="skip-link">{{i18n "skip_to_main_content"}}</a>
