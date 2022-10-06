@@ -105,6 +105,22 @@
 </div>
 </script>
 
+<script type="text/x-handlebars" data-template-name="components/category-title-link">
+<a class="category-title-link" href={{this.category.url}}>
+  <div class="category-text-title test">
+    <CategoryTitleBefore @category={{this.category}} />
+    {{#if this.category.read_restricted}}
+      {{d-icon this.lockIcon}}
+    {{/if}}
+    <span class="category-name">{{dir-span this.category.name}}</span>
+  </div>
+  {{#if this.category.uploaded_logo.url}}
+    <CdnImg @src={{this.category.uploaded_logo.url}} @class="category-logo" @width={{this.category.uploaded_logo.width}} @height={{this.category.uploaded_logo.height}} @alt="" />
+  {{/if}}
+</a>
+
+</script>
+
 <script type="text/x-handlebars" data-template-name="application">
 <DiscourseRoot>
   <a href="#main-container" id="skip-link">{{i18n "skip_to_main_content"}}</a>
