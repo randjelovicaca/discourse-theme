@@ -837,63 +837,80 @@ div.row {
   background: transparent;
 }
 
-input[type],
-div.ac-wrap,
-.popup-menu,
-#reply-control.open,
-.d-editor-textarea-wrapper {
-  background-color: rgba(0, 15, 255, 0.00);
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(2rem);
-    backdrop-filter: blur(2rem);      
-    z-index: -1;
-  }
-}
 
-.menu-panel.drop-down {
-  background-color: rgba(0, 15, 255, 0.00);
-  -webkit-backdrop-filter: blur(2rem);
-  backdrop-filter: blur(2rem); 
-}
 
-#reply-control .mini-tag-chooser .select-kit-header {
-  background: transparent;
-  border-radius: 8px;
-}
-
-.popup-menu {
-  border-radius:8px;
-}
-
-.discourse-reactions-state-panel .container, .discourse-reactions-picker .discourse-reactions-picker-container {
-  border-radius: 8px;
-  background: rgba(0, 15, 255, 0.00);
-  backdrop-filter: blur(2rem);
-  -webkit-backdrop-filter: blur(2rem);
-}
-
-.admin-report .conditional-loading-section.is-loading {
+.presence-users {
   background: transparent;
 }
 
-nav.post-controls .actions button{
-  border-radius:8px;
+img.avatar {
+  border-radius: 15px;
 }
 
-.user-menu .quick-access-panel {
-  ul {
+.search-container .search-page-heading {
+  padding: 2em 3.8em;
+  font-size: 5em;
+}
+
+.search-advanced-additional-options {
+  font-size: 20px;
+}
+
+.user-invite-none {
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+.topic-map {
+  background-color: rgba(6, 6, 6, 0.00);
+}
+
+a.mention {
+  background-color: rgba(255, 255, 255, 0.00);
+}
+
+div.poll .results {
+  .chosen .bar,
+  .bar-back {
     border-radius: 8px;
-    opacity: 0.7;
-    li a {
-      padding: 0em 0.5em;
-    }
   }
-  &.quick-access-profile li:not(.show-all) a {
-    padding-bottom: .1em;
+  .bar {
+    border-radius: 8px;
   }
 }
 
+.map:first-of-type .buttons .btn {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.user-main .about .secondary dl div {
+  margin-right: -6px;
+}
+
+#reply-control .save-or-cancel .cancel {
+  background: #2C2C2C;
+  border-radius: 8px;
+  width: 70px;
+  height: 30px;
+  content: "test" !important;
+  text-align: center !important;
+}
+
+
+div#banner,
+div.global-notice,
+.alert.alert-info {
+  border-radius: 12px;
+}
+
+blockquote {
+  border-radius: 8px;
+}
+
+.admin-detail,
+.admin-controls .controls,
+.nav-stacked li,
+.admin-nav {
+  background: transparent;
+  border-radius: 8px;
+}
