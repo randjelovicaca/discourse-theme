@@ -799,7 +799,43 @@ discourse you really gotta fix your search system
   margin-right: auto;
 }
 
+/*Ultra's mockup on the flair, I liked it so I made it*/
+.topic-avatar,
+.avatar-flair-preview,
+.collapsed-info .user-profile-avatar,
+.user-image,
+.latest-topic-list-item {
+  .avatar-flair {
+    &.rounded {
+      background-color: rgba(255, 255, 255, 0.00);
+      bottom: 25px;
+      right: -14px;
+    }
+  }
+}
 
+.user-card-avatar,
+.user-profile-avatar {
+  .avatar-flair {
+    &.rounded {
+      background-color: rgba(255, 255, 255, 0.00);
+      bottom: -20px;
+      right: -23px;
+    }
+    .fa {
+      right: -20px;
+    }
+  }
+}
+
+.topic-body .topic-meta-data {
+  right: -5px;
+  align-items: end !important;
+}
+
+div.row {
+  background: transparent;
+}
 
 .menu-panel.drop-down {
   background-color: rgba(0, 15, 255, 0.00);
