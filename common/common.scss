@@ -464,3 +464,342 @@ body.archetype-regular #main-outlet {
   }
 }
 
+
+
+.ip-lookup .location-box {
+  background-color: rgba(36, 36, 36, 0.07);
+  border-radius: 8px;
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+}
+
+.navigation-container {
+  margin-top: 2em;
+}
+
+.published-page-content-wrapper {
+  max-width: 1000px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background: var(--secondary);
+  border-radius: 1em;
+  padding: 3em 3em 5%;
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.07), 0 10.8529px 24.1177px rgba(0, 0, 0, 0.0456112), 0 4.50776px 10.0172px rgba(0, 0, 0, 0.035), 0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
+  z-index: 1;
+  position: relative;
+}
+
+.published-page {
+  &::before{
+    background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
+    clip-path: ellipse(148% 70% at 91% -14%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: 0;
+  }
+  .background-container {
+    display: none;
+  }
+}
+
+.post-notice {
+  background: transparent;
+}
+
+.group-details-container {
+  border-radius: 8px;
+}
+
+.quote-button {
+  background-color: var(--primary-low-mid);
+  border-radius: 0.5em;
+}
+
+.directory {
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > span {
+      margin-bottom: 5px;
+    }
+  }
+  .filter-name {
+    float: none;
+  }
+  .group-filter:not(.active) .select-kit-header {
+    color: var(--primary-high);
+  }
+}
+
+.user-card-directory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px 20px;
+  margin-top: 60px;
+  @media only screen and (min-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .user-card-container {
+    margin: 60px 20px;
+    width: 100%;
+    background-color: var(--secondary);
+    box-shadow: none;
+    margin-bottom: auto;
+  }
+  .user-card {
+    z-index: auto;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    .badge-section {
+      overflow: hidden;
+    }
+  }
+  .usercard-controls {
+    display: none;
+  }
+  .user-card-directory-footer {
+    background-color: var(--secondary);
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .stat {
+      flex-basis: 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2px;
+      .label {
+        font-size: medium;
+        .d-icon {
+          margin-right: 0.2em;
+          color: var(--primary-medium);
+        }
+      }
+    }
+  }
+}
+
+@supports (display: grid) {
+  .user-card-directory {
+    display: grid;
+  }
+  .user-card-directory .user-card-container {
+    margin: 0;
+  }
+}
+
+.fullscreen-table-modal .modal-inner-container {
+  border-radius: 8px;
+}
+
+.hljs {
+  border-radius: 8px;
+}
+
+/*
+discourse you really gotta fix your search system
+*/
+.search-container {
+  .search-header {
+    background: transparent;
+  }
+  .search-filters {
+    background-color: #121212;
+    .search-advanced-filters {
+      background-color: #121212;
+    }
+    .search-advanced-filters .search-advanced-options,
+    details.search-advanced-additional-options > summary {
+      background-color: #121212;
+    }
+  }
+  .search-bar {
+    background-color: #121212;
+  }
+}
+
+.page-not-found-topics {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Ultra's mockup on the flair, I liked it so I made it*/
+.topic-avatar,
+.avatar-flair-preview,
+.collapsed-info .user-profile-avatar,
+.user-image,
+.latest-topic-list-item {
+  .avatar-flair {
+    &.rounded {
+      background-color: rgba(255, 255, 255, 0.00);
+      bottom: 25px;
+      right: -14px;
+    }
+  }
+}
+
+.user-card-avatar,
+.user-profile-avatar {
+  .avatar-flair {
+    &.rounded {
+      background-color: rgba(255, 255, 255, 0.00);
+      bottom: -20px;
+      right: -23px;
+    }
+    .fa {
+      right: -20px;
+    }
+  }
+}
+
+.topic-body .topic-meta-data {
+  right: -5px;
+  align-items: end !important;
+}
+
+div.row {
+  background: transparent;
+}
+
+input[type],
+div.ac-wrap,
+.popup-menu,
+#reply-control.open,
+.d-editor-textarea-wrapper {
+  background-color: rgba(0, 15, 255, 0.00);
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);      
+    z-index: -1;
+  }
+}
+
+.menu-panel.drop-down {
+  background-color: rgba(0, 15, 255, 0.00);
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem); 
+}
+
+#reply-control .mini-tag-chooser .select-kit-header {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.popup-menu {
+  border-radius:8px;
+}
+
+.discourse-reactions-state-panel .container, .discourse-reactions-picker .discourse-reactions-picker-container {
+  border-radius: 8px;
+  background: rgba(0, 15, 255, 0.00);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+}
+
+.admin-report .conditional-loading-section.is-loading {
+  background: transparent;
+}
+
+nav.post-controls .actions button{
+  border-radius:8px;
+}
+
+.user-menu .quick-access-panel {
+  ul {
+    border-radius: 8px;
+    opacity: 0.7;
+    li a {
+      padding: 0em 0.5em;
+    }
+  }
+  &.quick-access-profile li:not(.show-all) a {
+    padding-bottom: .1em;
+  }
+}
+
+.presence-users {
+  background: transparent;
+}
+
+img.avatar {
+  border-radius: 15px;
+}
+
+.search-container .search-page-heading {
+  padding: 2em 3.8em;
+  font-size: 5em;
+}
+
+.search-advanced-additional-options {
+  font-size: 20px;
+}
+
+.user-invite-none {
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+.topic-map {
+  background-color: rgba(6, 6, 6, 0.00);
+}
+
+a.mention {
+  background-color: rgba(255, 255, 255, 0.00);
+}
+
+div.poll .results {
+  .chosen .bar,
+  .bar-back {
+    border-radius: 8px;
+  }
+  .bar {
+    border-radius: 8px;
+  }
+}
+
+.map:first-of-type .buttons .btn {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.user-main .about .secondary dl div {
+  margin-right: -6px;
+}
+
+#reply-control .save-or-cancel .cancel {
+  background: #2C2C2C;
+  border-radius: 8px;
+  width: 70px;
+  height: 30px;
+  content: "test" !important;
+  text-align: center !important;
+}
+
+
+div#banner,
+div.global-notice,
+.alert.alert-info {
+  border-radius: 12px;
+}
+
+blockquote {
+  border-radius: 8px;
+}
+
+.admin-detail,
+.admin-controls .controls,
+.nav-stacked li,
+.admin-nav {
+  background: transparent;
+  border-radius: 8px;
+}
