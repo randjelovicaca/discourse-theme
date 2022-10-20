@@ -844,13 +844,13 @@ div.ac-wrap,
 .d-editor-textarea-wrapper {
   background-color: rgba(0, 15, 255, 0.00);
   &::before {
-    /* content: ''; */
-    /* position: absolute; */
-    /* width: 100%; */
-    /* height: 100%; */
-    /* -webkit-backdrop-filter: blur(2rem); */
-    /* backdrop-filter: blur(2rem); */     
-    /* z-index: -1; */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);      
+    z-index: -1;
   }
 }
 
