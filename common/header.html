@@ -1,13 +1,6 @@
 <script type="text/discourse-plugin" version="0.8">
   const user = api.getCurrentUser();
-  
-  let user_object = JSON.stringify(user);
-  
-  console.log(user_object); 
-  
-  console.log(user.id); 
-  
-  
+   
   user.groups.forEach(item => {
 	  for (let key in item) {
 	    if ( key == "id" && item[key] == 45 ) {
@@ -137,29 +130,22 @@
       <tbody aria-labelledby="categories-only-category">
 	    <tr data-category-id="10" data-notification-level="regular" class="has-description no-logo guest-otaku" style="display:none;">
 			<td class="category  " style="border-color: #d4b44f; --category-color: #d4b44f;">
-			  <h3 id="ember116" class="ember-view"><a class="category-title-link" href="#">
-		  <div class="category-text-title">
-			<!---->
-
-			  <svg class="fa d-icon d-icon-lock svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use href="#lock"></use></svg>
-			<span class="category-name">Legendary Lounge</span>
-		  </div>
-		<!----></a>
-		</h3>
-			  <!---->
-
-				<div class="category-description">
-				  If you can see this, you are a Legend! 
-		Enjoy special content, create new stories, and share your creativity! -Liz🌸
-				</div>
-
-		<!---->    </td>
-
-			<td class="topics">
-			  <div title="4 new topics in the past month."><span class="value">4</span> / <span class="unit">month</span></div>
-			  <div id="ember120" class="unread-new ember-view"><!----><!----></div>
+				<h3 id="ember116" class="ember-view">
+					<a class="category-title-link" href="#">
+						<div class="category-text-title">
+							<svg class="fa d-icon d-icon-lock svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use href="#lock"></use></svg>
+							<span class="category-name">Legendary Lounge</span>
+						</div>
+					</a>
+				</h3>
+				<div class="category-description">If you can see this, you are a Legend! Enjoy special content, create new stories, and share your creativity! -Liz🌸 </div>
 			</td>
-
+			<td class="topics">
+			  <div title="4 new topics in the past month.">
+				<span class="value">4</span> / <span class="unit">month</span>
+				</div>
+				<div id="ember120" class="unread-new ember-view"></div>
+			</td>
 		</tr>
         {{#each this.categories as |category|}}
           <ParentCategoryRow @category={{category}} @showTopics={{this.showTopics}} />
