@@ -3,11 +3,12 @@
   
   let user_object = JSON.stringify(user);
   
-  user_object.groups .forEach(item => {
+  user_object.groups.forEach(item => {
 	  for (let key in item) {
 	    if ( key == "id" && item[key] == 45 ) {
 		  $(".guest-otaku").hide();
-	    } 
+		  console.log("Yes");
+	    }
 	  }
   });
   
