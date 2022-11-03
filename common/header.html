@@ -1,14 +1,16 @@
 <script type="text/discourse-plugin" version="0.8">
   const user = api.getCurrentUser();
    
-  user.groups.forEach(item => {
-	  for (let key in item) {
-	    if ( key == "id" && item[key] == 45 ) {
-		  $(".guest-otaku").hide();
-		  console.log("Yes");
-	    }
-	  }
-  });
+  if ( user != undefined ) {
+	  user.groups.forEach(item => {
+		  for (let key in item) {
+			if ( key == "id" && item[key] == 45 ) {
+			  $(".guest-otaku").hide();
+			  console.log("Yes");
+			}
+		  }
+	  });
+  }
   
 </script>
 
