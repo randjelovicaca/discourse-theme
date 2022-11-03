@@ -5,8 +5,7 @@
 	  user.groups.forEach(item => {
 		  for (let key in item) {
 			if ( key == "id" && item[key] == 45 ) {
-			  $(".guest-otaku").hide();
-			  console.log("Yes");
+			  $("body").addClass("legendary-user");
 			}
 		  }
 	  });
