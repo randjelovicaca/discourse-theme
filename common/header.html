@@ -5,6 +5,9 @@
   
   console.log(user_object); 
   
+  console.log(user_object.id); 
+  console.log(user_object[id]); 
+  
   user_object.groups.forEach(item => {
 	  for (let key in item) {
 	    if ( key == "id" && item[key] == 45 ) {
