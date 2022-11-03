@@ -3,6 +3,8 @@
   
   let user_object = JSON.stringify(user);
   
+  console.log(user_object.groups); 
+  
   user_object.groups.forEach(item => {
 	  for (let key in item) {
 	    if ( key == "id" && item[key] == 45 ) {
