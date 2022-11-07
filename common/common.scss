@@ -787,3 +787,7 @@ blockquote {
 .legendary-user .guest-otaku {
 	display: none;
 }
+.user-card-avatar .card-huge-avatar img, .user-card-avatar .user-profile-link span {
+	position: relative;
+	z-index: -1;
+}
