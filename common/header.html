@@ -225,12 +225,13 @@
           <PluginOutlet @name="user-card-avatar-flair" @connectorTagName="div" @args={{hash user=this.user}} @tagName="div" />
         </div>
         <div class="names">
-          <h1 class="{{this.staff}} {{this.newUser}} {{if this.nameFirst "full-name" "username"}}">
+          <h1 class="otaku-username {{this.staff}} {{this.newUser}} {{if this.nameFirst "full-name" "username"}}">
             {{#if this.user.profile_hidden}}
               <span class="name-username-wrapper">
                 {{if this.nameFirst this.user.name (format-username this.user.username)}}
               </span>
             {{else}}
+			  <a href={{this.user.path}} class="otaku-link" target="_blank"></a> 
               <a href={{this.user.path}} {{action "showUser" this.user}} class="user-profile-link" target="_blank">
                 <span class="name-username-wrapper">
                   {{if this.nameFirst this.user.name (format-username this.user.username)}}
