@@ -216,7 +216,7 @@
           {{#if this.user.profile_hidden}}
             <span class="card-huge-avatar">{{bound-avatar this.user "huge"}}</span>
           {{else}}
-		    <a href={{this.user.path}} class="otaku-link" target="_blank"></a> 
+		    <a href={{this.user.path}} class="otaku-link" target="_blank"> </a> 
             <a href={{this.user.path}} {{action "showUser" this.user}} class="card-huge-avatar" >{{bound-avatar this.user "huge"}}</a>
           {{/if}}
 
