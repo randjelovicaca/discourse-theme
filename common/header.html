@@ -1,18 +1,3 @@
-<script type="text/discourse-plugin" version="0.8">
-  const user = api.getCurrentUser();
-   
-  if ( user != undefined ) {
-	  user.groups.forEach(item => {
-		  for (let key in item) {
-			if ( key == "id" && item[key] == 45 ) {
-			  $("body").addClass("legendary-user");
-			}
-		  }
-	  });
-  }
-  
-</script>
-
 <script type="text/x-handlebars" data-template-name="components/badge-card">
 {{#if this.displayCount}}
   <a href={{this.url}} title={{i18n "badges.granted" count=this.displayCount}} class="grant-count">{{this.displayCount}}</a>
@@ -129,25 +114,6 @@
         </tr>
       </thead>
       <tbody aria-labelledby="categories-only-category">
-	    <tr data-category-id="10" data-notification-level="regular" class="has-description no-logo guest-otaku">
-			<td class="category  " style="border-color: #d4b44f; --category-color: #d4b44f;">
-				<h3 id="ember116" class="ember-view">
-					<a class="category-title-link" href="#">
-						<div class="category-text-title">
-							<svg class="fa d-icon d-icon-lock svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use href="#lock"></use></svg>
-							<span class="category-name">Legendary Lounge</span>
-						</div>
-					</a>
-				</h3>
-				<div class="category-description">All my Legendary Fam get to enjoy an extra space to hang out, vent, and share their experiences! -Liz🌸 </div>
-			</td>
-			<td class="topics">
-			  <div title="4 new topics in the past month.">
-				<span class="value">4</span> / <span class="unit">month</span>
-				</div>
-				<div id="ember120" class="unread-new ember-view"></div>
-			</td>
-		</tr>
         {{#each this.categories as |category|}}
           <ParentCategoryRow @category={{category}} @showTopics={{this.showTopics}} />
         {{/each}}
