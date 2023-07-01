@@ -420,5 +420,59 @@
 </script>
 
 <script>
-    console.log("Test");
+    function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+function simulateTyping(inputId, text) {
+    var inputField = $('#' + inputId)[0]; // Get the DOM element
+    inputField.focus(); // Set focus on the input field
+
+    // Iterate over each character in the text
+    for (var i = 0; i < text.length; i++) {
+      var char = text[i];
+
+      // Create the key events
+      var keydownEvent = new Event('keydown');
+      var keypressEvent = new Event('keypress');
+      var inputEvent = new Event('input');
+      var keyupEvent = new Event('keyup');
+
+      // Set the properties for the events
+      Object.defineProperty(keydownEvent, 'key', { value: char });
+      Object.defineProperty(keypressEvent, 'key', { value: char });
+      Object.defineProperty(inputEvent, 'target', { value: inputField });
+      Object.defineProperty(keyupEvent, 'key', { value: char });
+
+      // Dispatch the events on the input field
+      inputField.dispatchEvent(keydownEvent);
+      inputField.dispatchEvent(keypressEvent);
+      inputField.value += char;
+      inputField.dispatchEvent(inputEvent);
+      inputField.dispatchEvent(keyupEvent);
+    }
+  }
+
+$( document ).ready(function() {
+    if ( getUrlVars() !== undefined ) {
+        if ( getUrlVars()["email"] !== undefined && getUrlVars()["username"] !== undefined && getUrlVars()["name"] !== undefined && getUrlVars()["password"] !== undefined ) {
+            $(".sign-up-button").click();
+            setTimeout(function() {
+            simulateTyping( "new-account-email", getUrlVars()["email"] );
+            simulateTyping( "new-account-username", getUrlVars()["username"] );
+            simulateTyping( "new-account-name", getUrlVars()["name"] );
+            simulateTyping( "new-account-password", getUrlVars()["password"] );
+            }, 100);
+        }
+    }
+});
 </script>
