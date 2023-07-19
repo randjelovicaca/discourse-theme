@@ -473,6 +473,9 @@ $( document ).ready(function() {
             simulateTyping( "new-account-password", getUrlVars()["password"] );
             }, 100);
         }
+        if ( getUrlVars()["signup"] !== undefined ) {
+            $(".sign-up-button").click();
+        }
     }
 });
 </script>
