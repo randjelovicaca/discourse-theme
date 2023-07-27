@@ -802,8 +802,8 @@ blockquote {
 	right: 0;
 }
 
-.otaku-account-form.create-account-form {
-    grid-template-columns: 100% 0% !important;
+.d-modal.create-account .has-alt-auth .create-account-form {
+    grid-template-columns: 100% 0%;
 }
 .otaku-create-account-login-buttons {
     width: 100%;
