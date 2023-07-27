@@ -1004,6 +1004,10 @@ blockquote {
 .d-modal.login-modal:not(.hidden) .otaku-modal #login-form {
     padding: 1em 30px;
 }
+.d-modal.login-modal:not(.hidden) .otaku-modal .modal-footer {
+    padding: 30px;
+    padding-top: 0;
+}
 
 @media screen and (max-width: 700px) {
 .otaku-modal {
