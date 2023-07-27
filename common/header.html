@@ -549,6 +549,12 @@
             {{#unless this.hasAuthOptions}}
               <DButton @class="btn-large" @id="login-link" @action={{route-action "showLogin"}} @disabled={{this.formSubmitted}} @label="log_in" />
             {{/unless}}
+              
+            {{#unless this.hasAuthOptions}}
+              <div class="otaku-create-account-login-buttons">
+                <LoginButtons @externalLogin={{action "externalLogin"}} />
+              </div>
+            {{/unless}}  
 
             <div class="disclaimer">
               {{html-safe this.disclaimerHtml}}
@@ -558,11 +564,7 @@
           <PluginOutlet @name="create-account-after-modal-footer" @connectorTagName="div" />
 
         {{/if}}
-        {{#unless this.hasAuthOptions}}
-          <div class="create-account-login-buttons">
-            <LoginButtons @externalLogin={{action "externalLogin"}} />
-          </div>
-        {{/unless}}
+        
 
         {{#if this.skipConfirmation}}
           {{loading-spinner size="large"}}
