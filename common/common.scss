@@ -813,16 +813,18 @@ blockquote {
     align-items: center !important;
     flex-direction: row !important;
     min-height: 100% !important;
+    flex-wrap: nowrap !important;
+    border: none !important;
 }
 .otaku-create-account-login-buttons #login-buttons button {
-    text-indent: -9999px;  
+    text-indent: -9999px;
     margin: 0 !important;
-    padding: 0;
-    border: none;
+    padding: 0 !important;
+    border: none !important;
     outline: none;
     box-shadow: none;
     margin-right: 15px !important;
-    padding: 5px;
+    padding: 5px !important;
 }
 .otaku-create-account-login-buttons #login-buttons button svg {
     width: 40px;
@@ -962,5 +964,24 @@ blockquote {
 .otaku-modal {
     width: 100%;
 }
-  
+.otaku-account-form #create-account-title {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+}
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group, .d-modal.create-account .otaku-modal .login-form .input-group {
+    padding: 0;
+}  
+.otaku-account-form .more-info {
+    right: 10px;
+    top: 8px;
+}
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form {
+    margin-bottom: 0;
+}   
+.d-modal.create-account .otaku-modal .modal-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+}
 }
