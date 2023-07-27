@@ -821,3 +821,12 @@ blockquote {
 .otaku-account-form #create-account-title {
     max-width: 100%;
 }
+.otaku-account-form .login-form .input-group input {
+    margin-bottom: 0 !important;
+}
+.otaku-account-form .more-info {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
