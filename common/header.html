@@ -658,6 +658,23 @@ inputGroups.forEach(inputGroup => {
   inputElement.addEventListener('blur', () => {
     inputGroup.classList.remove('focus-element');
   });
+});
+    
+inputGroups.forEach(inputGroup => {
+  const inputElement = inputGroup.querySelector('input');
+
+  // Function to check if the input is populated and add/remove the class accordingly
+  const handleInput = () => {
+    if (inputElement.value.trim() !== '') {
+      inputGroup.classList.add('focus-element');
+    } else {
+      inputGroup.classList.remove('focus-element');
+    }
+  };
+
+  // Add event listeners for both input and blur events
+  inputElement.addEventListener('input', handleInput);
+  inputElement.addEventListener('blur', handleInput);
 });    
     
 });    
