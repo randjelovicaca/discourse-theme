@@ -1032,4 +1032,7 @@ blockquote {
     padding-bottom: 0;
     padding-top: 0;
 }    
+.d-modal.login-modal:not(.hidden) .otaku-modal .modal-footer {
+    padding-top: 0;
+}    
 }
