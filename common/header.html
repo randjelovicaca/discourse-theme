@@ -557,6 +557,7 @@
             {{/unless}}
               
             {{#unless this.hasAuthOptions}}
+              <h3 class="login-buttons-title">Or Sign In With</h3>
               <div class="otaku-create-account-login-buttons">
                 <LoginButtons @externalLogin={{action "externalLogin"}} />
               </div>
