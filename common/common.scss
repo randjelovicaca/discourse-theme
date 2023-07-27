@@ -888,6 +888,8 @@ blockquote {
     padding-top: 0;
     background-color: #000;
     color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 #create-account-title .image {
     max-width: 60px;
@@ -930,4 +932,9 @@ blockquote {
 
 .otaku-modal .modal-body {
     background: transparent !important;
+}
+.modal-close svg {
+    color: #939699 !important;
+    width: 30px;
+    height: 30px;
 }
