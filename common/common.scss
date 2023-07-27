@@ -1072,8 +1072,10 @@ blockquote {
 }
 .d-modal.login-modal:not(.hidden) .otaku-modal #login-form {
     padding: 1em 16px !important;
+    padding-bottom: 0 !important;
 }
 .d-modal.login-modal:not(.hidden) .otaku-modal .modal-footer {
     padding: 16px;
+    padding-top: 8px;
 }
 }
