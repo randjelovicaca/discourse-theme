@@ -885,6 +885,9 @@ blockquote {
     max-width: 100%;
 }
 
-.btn-social.facebook svg {
-    color: #4267B2
+.otaku-modal .btn-social.facebook svg {
+    color: #4267B2 !important;
+}
+.otaku-modal .d-icon-fab-twitter {
+    margin-right: 8px;
 }
