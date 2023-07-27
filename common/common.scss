@@ -891,9 +891,17 @@ blockquote {
 #create-account-title .image img {
     max-width: 100%;
 }
-
+.otaku-modal .btn-social.facebook {
+    background-color: #4267B2 !important;
+}
 .otaku-modal .btn-social.facebook svg {
-    color: #4267B2 !important;
+    color: #fff !important;
+}
+.otaku-modal .btn-social.twitter {
+    background-color: #1da1f2;
+}
+.otaku-modal .btn-social.twitter .d-icon {
+    color: #fff;
 }
 .otaku-modal .login-link {
     margin-left: auto;
