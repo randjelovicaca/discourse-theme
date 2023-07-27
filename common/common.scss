@@ -851,8 +851,8 @@ blockquote {
 }
 .otaku-account-form .more-info {
     position: absolute;
-    right: 45px;
-    top: 11px;
+    right: 15px;
+    top: 8px;
     color: #939699 !important;
 }
 .focus-element .more-info {
@@ -866,6 +866,8 @@ blockquote {
 .d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form {
     overflow: hidden;
     background-color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .login-buttons-title { 
