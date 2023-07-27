@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6,p,
 summary,
 input,textbox,input,textarea,
 li,ul {
-  cursor: default !important;
+  /* cursor: default !important; */
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
