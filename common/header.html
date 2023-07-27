@@ -636,6 +636,15 @@
             {{#if this.showSignupLink}}
               <DButton @class="btn-large" @id="new-account-link" @action={{action "createAccount"}} @label="create_account.title" @tabindex="3" />
             {{/if}}
+            
+             {{#if this.showLoginButtons}}
+            <h3 class="login-buttons-title">Or Sign In With</h3> 
+              <div class="otaku-create-account-login-buttons">
+                <LoginButtons @externalLogin={{action "externalLogin"}} />
+              </div>
+            {{/if}}
+            
+            
           {{/if}}
           <ConditionalLoadingSpinner @condition={{this.showSpinner}} @size="small" />
             
@@ -652,11 +661,22 @@
     {{#if this.showLoginButtons}}
       {{#if this.noLoginLocal}}
         <div class="otaku-account-form login-left-side"> 
-          <div class="login-welcome-header">
-            <h1 class="login-title">{{i18n "login.header_title"}}</h1> <img src={{this.wavingHandURL}} alt="" class="waving-hand">
-            <p class="login-subheader">{{i18n "login.subheader_title"}}</p>
-          </div>
+           <div class="login-welcome-header">
+            <div class="image">
+              <img src="https://cdn.shopify.com/s/files/1/0528/3971/0891/files/Graphic_Assets_-_Illustrations_-_Chibi_Liz_-Happy_-_White_Background_1.png?v=1690468442">    
+            </div>
+            <div class="text">
+              <h1 class="login-title">{{i18n "login.header_title"}}</h1>
+              <p class="login-subheader">{{i18n "login.subheader_title"}}</p>
+            </div>
         </div>
+        </div>
+      
+      <h3 class="login-buttons-title">Or Sign In With</h3> 
+              <div class="otaku-create-account-login-buttons">
+                <LoginButtons @externalLogin={{action "externalLogin"}} />
+              </div>
+      
       {{/if}}
     {{/if}}
   </DModalBody>
