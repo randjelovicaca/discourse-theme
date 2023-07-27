@@ -820,6 +820,10 @@ blockquote {
 }
 .otaku-account-form #create-account-title {
     max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 0;
 }
 .otaku-account-form .login-form .input-group input {
     margin-bottom: 0 !important;
@@ -838,10 +842,18 @@ blockquote {
     max-height: 100% !important;
 }
 
-.otaku-modal .d-modal.create-account .has-alt-auth .login-form, .otaku-modal .d-modal.create-account .login-form {
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form {
     overflow: none;
 }
 
 .login-buttons-title { 
     width: 100%;
+}
+
+.otaku-modal {
+    width: 400px;
+}
+
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group, .d-modal.create-account .otaku-modal .login-form .input-group {
+    padding: 0 30px; 
 }
