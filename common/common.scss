@@ -921,6 +921,7 @@ blockquote {
 
 .d-modal.create-account .otaku-modal .modal-footer:before {
     background-image: none;
+    display: none;
 }
 
 .d-modal.create-account .has-alt-auth .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder, .d-modal.create-account .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder {
@@ -989,5 +990,5 @@ blockquote {
 }
 .otaku-modal button#login-link:after, .otaku-modal button#new-account-link:after {
     top: 10px;
-}
+}  
 }
