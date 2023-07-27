@@ -810,9 +810,10 @@ blockquote {
 }
 .otaku-create-account-login-buttons #login-buttons {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: center !important;
+    flex-direction: row !important;
 }
 .otaku-create-account-login-buttons #login-buttons button {
-    text-indent: -9999px;    
+    text-indent: -9999px;  
+    margin: 0 !important;
 }
