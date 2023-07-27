@@ -879,6 +879,11 @@ blockquote {
 
 .otaku-modal {
     width: 400px;
+    color: #fff;
+}
+
+.d-modal.login-modal:not(.hidden) .otaku-modal .modal-footer, .d-modal.create-account .otaku-modal .modal-footer {
+    border-top: none;
 }
 
 .d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group, .d-modal.create-account .otaku-modal .login-form .input-group {
