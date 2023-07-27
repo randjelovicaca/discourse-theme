@@ -1017,5 +1017,12 @@ blockquote {
 } 
 .d-modal.create-account .otaku-modal .has-alt-auth .create-account-form {
     margin-bottom: -2px;
-}    
+}
+.d-modal.login-modal:not(.hidden) .otaku-modal  .modal-footer {
+    border: none;
+}
+.otaku-modal {
+    background-color: #000;
+    color: #fff;
+}   
 }
