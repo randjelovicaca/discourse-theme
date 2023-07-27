@@ -840,11 +840,14 @@ blockquote {
 }
 .otaku-account-form .login-form .input-group input {
     margin-bottom: 0 !important;
+    background-color: #000;
+    border-radius: 5px !important;
 }
 .otaku-account-form .more-info {
     position: absolute;
     right: 45px;
     top: 11px;
+    color: #939699 !important;
 }
 .focus-element .more-info {
     display: none !important;
@@ -907,6 +910,16 @@ blockquote {
     margin-left: auto;
 }
 
-.d-modal.create-account .otaku-modal  .modal-footer:before {
+.d-modal.create-account .otaku-modal .modal-footer:before {
     background-image: none;
+}
+
+.d-modal.create-account .has-alt-auth .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder, .d-modal.create-account .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder {
+    color: #BFBFBF;
+}
+.create-account .otaku-modal .disclaimer {
+    color: #939699;
+}
+.otaku-modal button#login-link, .otaku-modal button#new-account-link {
+    color: #fff;
 }
