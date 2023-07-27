@@ -600,7 +600,7 @@
               <p class="login-subheader">{{i18n "login.subheader_title"}}</p>
             </div>
         </div>
-        <form id="login-form" method="post">
+        <form class="login-form" id="login-form" method="post">
           <div id="credentials" class={{this.credentialsClass}}>
             <div class="input-group">
               <Input @value={{this.loginName}} @type="email" id="login-account-name" class={{value-entered this.loginName}} autocomplete="username" autocorrect="off" autocapitalize="off" disabled={{this.showSecondFactor}} autofocus="autofocus" tabindex="1" />
