@@ -640,7 +640,8 @@
           <ConditionalLoadingSpinner @condition={{this.showSpinner}} @size="small" />
             
             {{#if this.showLoginButtons}}
-              <div class="otaku-login-right-side">
+            <h3 class="login-buttons-title">Or Sign In With</h3>
+              <div class="otaku-create-account-login-buttons">
                 <LoginButtons @externalLogin={{action "externalLogin"}} />
               </div>
             {{/if}}
