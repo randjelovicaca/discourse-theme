@@ -843,7 +843,7 @@ blockquote {
 }
 
 .d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form {
-    overflow: none;
+    overflow: hidden;
 }
 
 .login-buttons-title { 
@@ -856,4 +856,11 @@ blockquote {
 
 .d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group, .d-modal.create-account .otaku-modal .login-form .input-group {
     padding: 0 30px; 
+}
+
+.d-modal.create-account .otaku-modal .modal-footer {
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
