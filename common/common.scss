@@ -993,10 +993,8 @@ blockquote {
 .otaku-modal button#login-link:after, .otaku-modal button#new-account-link:after {
     top: 10px;
 }  
-.otaku-account-form #create-account-title {
-    margin-bototm: -1px !important;
-}
-.d-modal.create-account .otaku-modal .modal-footer {
+.d-modal.create-account .otaku-modal .modal-footer,
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form{
     margin-top: -1px;
 }    
 }
