@@ -821,11 +821,13 @@ blockquote {
     border: none;
     outline: none;
     box-shadow: none;
+    margin-right: 15px !important;
+    padding: 5px;
 }
 .otaku-create-account-login-buttons #login-buttons button svg {
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
 }
 .otaku-account-form #create-account-title {
     max-width: 100%;
@@ -892,9 +894,6 @@ blockquote {
 
 .otaku-modal .btn-social.facebook svg {
     color: #4267B2 !important;
-}
-.otaku-modal .d-icon-fab-twitter {
-    margin-right: 8px;
 }
 .otaku-modal .login-link {
     margin-left: auto;
