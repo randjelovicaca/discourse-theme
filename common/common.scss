@@ -817,6 +817,11 @@ blockquote {
 .otaku-create-account-login-buttons #login-buttons button {
     text-indent: -9999px;  
     margin: 0 !important;
+    padding: 0;
+}
+.otaku-create-account-login-buttons #login-buttons button svg {
+    width: 45px;
+    height: 45px;
 }
 .otaku-account-form #create-account-title {
     max-width: 100%;
@@ -848,6 +853,9 @@ blockquote {
 
 .login-buttons-title { 
     width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 .otaku-modal {
@@ -863,4 +871,12 @@ blockquote {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+}
+#create-account-title .image {
+    max-width: 60px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#create-account-title .image img {
+    max-width: 100%;
 }
