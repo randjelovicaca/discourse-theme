@@ -840,8 +840,7 @@ blockquote {
 .otaku-account-form .more-info {
     position: absolute;
     right: 45px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 11px;
 }
 .focus-element .more-info {
     display: none !important;
@@ -875,6 +874,7 @@ blockquote {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    padding-top: 0;
 }
 #create-account-title .image {
     max-width: 60px;
