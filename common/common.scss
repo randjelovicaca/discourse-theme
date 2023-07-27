@@ -833,12 +833,12 @@ blockquote {
     margin-right: 0;
 }
 .otaku-account-form .login-welcome-header {
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 0;
-    background-color: #000;
+    max-width: 100% !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+    background-color: #000 !important;
     color: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -977,9 +977,9 @@ blockquote {
     width: 100%;
 }
 .otaku-account-form .login-welcome-header {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 20px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 20px !important;
 }
 .d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group, .d-modal.create-account .otaku-modal .login-form .input-group {
     padding: 0;
