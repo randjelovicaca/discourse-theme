@@ -976,6 +976,13 @@ blockquote {
     padding: 0 !important;
 }
 
+.login-modal:not(.hidden) .otaku-modal .login-left-side #login-form {
+    margin: 15px 0 10px 0;
+}
+.login-modal:not(.hidden) .otaku-modal #login-form .input-group, .login-modal:not(.hidden) .otaku-modal .login-form .input-group {
+    width: 100%;
+}
+
 @media screen and (max-width: 700px) {
 .otaku-modal {
     width: 100%;
