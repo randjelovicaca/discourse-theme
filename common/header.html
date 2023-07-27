@@ -630,7 +630,7 @@
         <div class="modal-footer">
           {{#if this.canLoginLocal}}
             {{#unless this.showSecurityKey }}
-              <DButton @action={{action "login"}} @id="login-button" @form="login-form" @icon="unlock" @label="Log In" @disabled={{this.loginDisabled}} @class="btn btn-large btn-primary" @tabindex="2" />
+              <DButton @action={{action "login"}} @id="login-button" @form="login-form" @icon="unlock" @label={{this.loginButtonLabel}} @disabled={{this.loginDisabled}} @class="btn btn-large btn-primary" @tabindex="2" />
             {{/unless}}
 
             {{#if this.showSignupLink}}
