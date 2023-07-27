@@ -1027,5 +1027,9 @@ blockquote {
 .otaku-modal {
     background-color: #000;
     color: #fff;
-}   
+}  
+.d-modal.login-modal:not(.hidden) .otaku-modal #login-form, .d-modal.login-modal:not(.hidden) .otaku-modal .login-form, .d-modal.create-account #login-form, .d-modal.create-account .otaku-modal .login-form {
+    padding-bottom: 0;
+    padding-top: 0;
+}    
 }
