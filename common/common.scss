@@ -957,3 +957,12 @@ blockquote {
 .d-modal.create-account .has-alt-auth .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .has-alt-auth .login-form .input-group input.value-entered+label.alt-placeholder, .d-modal.create-account .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .login-form .input-group input.value-entered+label.alt-placeholder {
     border-radius: 3px !important;
 }
+
+@media screen and (max-width: 700px) {
+.otaku-modal {
+    width: 100%;
+}
+.d-modal.create-account .modal-inner-container, .d-modal.login-modal .modal-inner-container {
+    width: calc(100% - 30px);
+}    
+}
