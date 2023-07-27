@@ -997,6 +997,14 @@ blockquote {
     max-width: 100%;
 }
 
+.d-modal.login-modal:not(.hidden) .otaku-modal .login-welcome-header {
+    padding: 30px;
+    padding-bottom: 0;
+}
+.d-modal.login-modal:not(.hidden) .otaku-modal . #login-form {
+    padding: 1em 30px;
+}
+
 @media screen and (max-width: 700px) {
 .otaku-modal {
     width: 100%;
