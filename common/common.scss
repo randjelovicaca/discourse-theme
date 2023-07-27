@@ -832,7 +832,7 @@ blockquote {
     height: 40px;
     margin-right: 0;
 }
-.otaku-account-form #create-account-title {
+.otaku-account-form .login-welcome-header {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -894,12 +894,12 @@ blockquote {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#create-account-title .image {
+.login-welcome-header .image {
     max-width: 60px;
     margin-top: 5px;
     margin-right: 5px;
 }
-#create-account-title .image img {
+.login-welcome-header .image img {
     max-width: 100%;
 }
 .otaku-modal .btn-social.facebook {
@@ -976,7 +976,7 @@ blockquote {
 .otaku-modal {
     width: 100%;
 }
-.otaku-account-form #create-account-title {
+.otaku-account-form .login-welcome-header {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 20px;
