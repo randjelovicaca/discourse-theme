@@ -1049,4 +1049,8 @@ blockquote {
 .d-modal.login-modal:not(.hidden).fixed-modal .modal-inner-container, .d-modal.create-account.fixed-modal .modal-inner-container {
     max-width: 350px;
 }
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form, .d-modal.create-account .otaku-modal .login-form {
+    padding-left: 16px;
+    padding-right: 16px;
+}    
 }
