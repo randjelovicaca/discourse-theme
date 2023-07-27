@@ -421,6 +421,7 @@
 
 
 <script type="text/x-handlebars" data-template-name="modal/create-account">
+<div class="otaku-modal">
 <CreateAccount @email={{this.accountEmail}} @disabled={{this.submitDisabled}} @action={{action "createAccount"}}>
   {{#unless this.complete}}
     <PluginOutlet @name="create-account-before-modal-body" @tagName="span" @connectorTagName="div" />
@@ -573,6 +574,7 @@
     </DModalBody>
   {{/unless}}
 </CreateAccount>
+</div>
 </script>
 
 <script>
