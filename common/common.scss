@@ -837,6 +837,8 @@ blockquote {
     padding-bottom: 0;
     background-color: #000;
     color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .otaku-account-form .login-form .input-group input {
     margin-bottom: 0 !important;
@@ -925,6 +927,6 @@ blockquote {
     margin-left: auto;
 }
 
-.d-modal.create-account .has-alt-auth .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .has-alt-auth .login-form .input-group input.value-entered+label.alt-placeholder, .d-modal.create-account .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .login-form .input-group input.value-entered+label.alt-placeholder {
-    border-radius: 3px;
+.otaku-modal .modal-body {
+    background: transparent !important;
 }
