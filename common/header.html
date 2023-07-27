@@ -638,6 +638,13 @@
             {{/if}}
           {{/if}}
           <ConditionalLoadingSpinner @condition={{this.showSpinner}} @size="small" />
+            
+            {{#if this.showLoginButtons}}
+              <div class="otaku-login-right-side">
+                <LoginButtons @externalLogin={{action "externalLogin"}} />
+              </div>
+            {{/if}}
+            
         </div>
       </div>
     {{/if}}
@@ -650,10 +657,6 @@
           </div>
         </div>
       {{/if}}
-
-      <div class="login-right-side">
-        <LoginButtons @externalLogin={{action "externalLogin"}} />
-      </div>
     {{/if}}
   </DModalBody>
 
