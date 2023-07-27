@@ -833,3 +833,11 @@ blockquote {
 .focus-element .more-info {
     display: none !important;
 }
+
+.fixed-modal:not(.bookmark-reminder-modal):not(.history-modal):not(.sidebar__edit-navigation-menu__modal) .otaku-modal .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
+    max-height: 100% !important;
+}
+
+.otaku-modal .d-modal.create-account .has-alt-auth .login-form, .otaku-modal .d-modal.create-account .login-form {
+    overflow: none;
+}
