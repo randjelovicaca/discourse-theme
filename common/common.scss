@@ -819,12 +819,12 @@ blockquote {
 .otaku-create-account-login-buttons #login-buttons button {
     text-indent: -9999px;
     margin: 0 !important;
-    padding: 0 !important;
     border: none !important;
     outline: none;
     box-shadow: none;
     margin-right: 15px !important;
     padding: 5px !important;
+    flex: none !important;
 }
 .otaku-create-account-login-buttons #login-buttons button svg {
     width: 40px;
