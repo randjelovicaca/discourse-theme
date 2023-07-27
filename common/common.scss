@@ -801,3 +801,18 @@ blockquote {
 	left: 0;
 	right: 0;
 }
+
+.d-modal.create-account .has-alt-auth .create-account-form {
+    grid-template-columns: 100% 0%;
+}
+.otaku-create-account-login-buttons {
+    width: 100%;
+}
+.otaku-create-account-login-buttons #login-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.otaku-create-account-login-buttons #login-buttons button {
+    text-indent: -9999px;    
+}
