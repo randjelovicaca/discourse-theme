@@ -964,6 +964,13 @@ blockquote {
 .hide-text {
     display: none !important;
 }
+.login-modal:not(.hidden) .otaku-modal .login-modal-body.has-alt-auth .login-left-side {
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
 
 @media screen and (max-width: 700px) {
 .otaku-modal {
