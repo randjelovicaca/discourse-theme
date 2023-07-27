@@ -815,6 +815,8 @@ blockquote {
     min-height: 100% !important;
     flex-wrap: nowrap !important;
     border: none !important;
+    justify-content: flex-start !important;
+    padding: 0 !important;
 }
 .otaku-create-account-login-buttons #login-buttons button {
     text-indent: -9999px;
