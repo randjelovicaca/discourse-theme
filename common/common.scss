@@ -986,4 +986,7 @@ blockquote {
     padding-right: 16px;
     padding-bottom: 20px;
 }
+.otaku-modal button#login-link:after, .otaku-modal button#new-account-link:after {
+    top: 10px;
+}
 }
