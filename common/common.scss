@@ -962,5 +962,7 @@ blockquote {
 .otaku-modal {
     width: 100%;
 }
-  
+.d-modal.create-account .modal-inner-container, .d-modal.login-modal .modal-inner-container {
+    width: calc(100% - 30px);
+}    
 }
