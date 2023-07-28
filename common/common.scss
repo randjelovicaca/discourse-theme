@@ -966,6 +966,7 @@ blockquote {
 }
 
 .d-modal.create-account .has-alt-auth .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .has-alt-auth .login-form .input-group input.value-entered+label.alt-placeholder, .d-modal.create-account .login-form .input-group input:focus+label.alt-placeholder, .d-modal.create-account .login-form .input-group input.value-entered+label.alt-placeholder {
+    left: 13px;
     border-radius: 3px !important;
 }
 .hide-text {
