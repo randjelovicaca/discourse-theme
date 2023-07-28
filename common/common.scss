@@ -1008,6 +1008,9 @@ blockquote {
     padding: 30px;
     padding-top: 0;
 }
+.d-modal.create-account .otaku-modal .has-alt-auth .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder, .d-modal.create-account .otaku-modal .login-form .input-group input:not(.value-entered):not(:focus)+label.alt-placeholder {
+    left: 10px;
+}
 
 @media screen and (max-width: 700px) {
 .otaku-modal {
