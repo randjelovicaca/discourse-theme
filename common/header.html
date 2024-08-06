@@ -1,3 +1,38 @@
+<script type="text/discourse-plugin" version="0.8">
+  (function() {
+    const metaTags = {
+      '/categories': {
+        'description': 'Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!',
+        'og:description': 'Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!'
+      },
+      '/privacy': {
+        'description': 'Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.',
+        'og:description': 'Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.'
+      },
+      '/tos': {
+        'description': 'Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly.',
+        'og:description': 'Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly.'
+      }
+    };
+
+    function setMetaTags(path) {
+      const metaData = metaTags[path] || {};
+      for (const [property, content] of Object.entries(metaData)) {
+        let metaTag = document.querySelector(`meta[name="${property}"], meta[property="${property}"]`);
+        if (!metaTag) {
+          metaTag = document.createElement('meta');
+          metaTag.setAttribute(property.includes('og:') ? 'property' : 'name', property);
+          document.head.appendChild(metaTag);
+        }
+        metaTag.setAttribute('content', content);
+      }
+    }
+
+    setMetaTags(window.location.pathname);
+  })();
+</script>
+
+
 <script type="text/x-handlebars" data-template-name="components/badge-card">
 {{#if this.displayCount}}
   <a href={{this.url}} title={{i18n "badges.granted" count=this.displayCount}} class="grant-count">{{this.displayCount}}</a>
