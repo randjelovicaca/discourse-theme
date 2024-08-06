@@ -5,11 +5,18 @@
 </script>
 
 <script type="text/discourse-plugin" version="0.8">
- if (window.location.href === 'https://community.theotakubox.com/categories') {
- var metaTag = document.querySelector('meta[property="og:description"]');
+    var metaTag = document.querySelector('meta[property="og:description"]');
+    if (window.location.href === 'https://community.theotakubox.com/categories') {
         if (metaTag) {
-          metaTag.setAttribute('content', 'Your new meta description for the categories page');
+          metaTag.setAttribute('content', 'Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!');
         }
- 
- }
+    } else if (window.location.href === 'https://community.theotakubox.com/privacy') {
+        if (metaTag) {
+          metaTag.setAttribute('content', 'Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.');
+        }
+    } else if (window.location.href === 'https://community.theotakubox.com/tos') {
+        if (metaTag) {
+          metaTag.setAttribute('content', 'Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly. ');
+        }
+    }
 </script>
