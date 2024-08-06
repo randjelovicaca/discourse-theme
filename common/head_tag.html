@@ -3,3 +3,14 @@
 <script type="text/discourse-plugin" version="0.8">
    console.log('Hello world!')
 </script>
+
+<script type="text/discourse-plugin" version="0.8">
+  api.onPageChange((url, title) => {
+    if (window.location.href === 'https://community.theotakubox.com/categories') {
+      var meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Your custom meta description for the categories page';
+      document.head.appendChild(meta);
+    }
+  });
+</script>
