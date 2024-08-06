@@ -4,29 +4,18 @@
    console.log('Hello world!')
 </script>
 
-<script type="text/discourse-plugin" version="0.8">
-    var metaTag = document.querySelector('meta[property="og:description"]');
-    var metaTag2 = document.querySelector('meta[name="description"]');
-    if (window.location.href === 'https://community.theotakubox.com/categories') {
-        if (metaTag) {
-          metaTag.setAttribute('content', 'Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!');
-        }
-        if (metaTag2) {
-          metaTag2.setAttribute('content', 'Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!');
-        }
-    } else if (window.location.href === 'https://community.theotakubox.com/privacy') {
-        if (metaTag) {
-          metaTag.setAttribute('content', 'Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.');
-        }
-        if (metaTag2) {
-          metaTag2.setAttribute('content', 'Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.');
-        }
-    } else if (window.location.href === 'https://community.theotakubox.com/tos') {
-        if (metaTag) {
-          metaTag.setAttribute('content', 'Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly. ');
-        }
-        if (metaTag2) {
-          metaTag2.setAttribute('content', 'Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly. ');
-        }
-    }
+<script type="text/x-handlebars" data-template-name="header">
+  <head>
+    {{!-- Other head content --}}
+    {{#if (eq request.path "/categories")}}
+      <meta name="description" content="Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!">
+      <meta property="og:description" content="Explore various categories within The Otaku Box Community. Connect with fellow fans, share your love for anime, and discover exciting new content!">
+    {{else if (eq request.path "/privacy")}}
+      <meta name="description" content="Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.">
+      <meta property="og:description" content="Read our Privacy Policy to learn how The Otaku Box collects, uses, and protects your personal information. Your privacy and security are our top priorities.">
+    {{else if (eq request.path "/tos")}}
+      <meta name="description" content="Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly.">
+      <meta property="og:description" content="Review the Terms and Services for Otaku Community. Find information on content ownership, user conduct guidelines, subscription details, and our privacy policy. Stay informed about how to interact with our content and services responsibly.">
+    {{/if}}
+  </head>
 </script>
