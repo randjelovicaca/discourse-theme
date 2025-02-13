@@ -1,5 +1,14 @@
 <meta name="google-site-verification" content="b9cMseE7qcY-2RsJcu226ndfszHRj6Bj9d8x2C_z-Fo" />
 
 <script type="text/discourse-plugin" version="0.8">
-   console.log('Hello world!')
+   console.log('Hello world!');
+   $( document ).ready(function() {
+    const user = api.getCurrentUser(),
+      username = user.username,
+      email = user.email;
+      console.log(user);
+      console.log(username);
+      console.log(email);
+    
+  });
 </script>
