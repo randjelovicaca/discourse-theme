@@ -2,13 +2,14 @@
 
 <script type="text/discourse-plugin" version="0.8">
    console.log('Hello world!');
-   $( document ).ready(function() {
-    const user = api.getCurrentUser(),
-      username = user.username,
-      email = user.email;
-      console.log(user);
-      console.log(username);
-      console.log(email);
-    
-  });
+   $(document).ready(function() {
+    const user = api.getCurrentUser();
+    if (user && user.username) {
+        const username = encodeURIComponent(user.username);
+        const linkElement = $("article[data-post-id='125774'] a[aria-label='Reddit Quest link clicked 1 time']");
+        if (linkElement.length) {
+            linkElement.attr("href", `https://rhinodigital.typeform.com/redditquest#name=${username}`);
+        }
+    }
+});
 </script>
