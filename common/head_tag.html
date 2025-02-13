@@ -2,11 +2,17 @@
 
 <script type="text/discourse-plugin" version="0.8">
    console.log('Hello world!');
-   $(document).ready(function() {
+ $(document).ready(function() {
     const user = api.getCurrentUser();
     if (user && user.username) {
         const username = encodeURIComponent(user.username);
-        const linkElement = $("article[data-post-id='125774'] a[aria-label='Reddit Quest link clicked 1 time']");
+        
+        // Locate the correct article with the specified post ID
+        const article = $("article[data-post-id='125774']");
+        
+        // Find the paragraph that contains the specific 'Reddit Quest' link
+        const linkElement = article.find("a[href='https://liz.is/redditquest']");
+        
         if (linkElement.length) {
             linkElement.attr("href", `https://rhinodigital.typeform.com/redditquest#name=${username}`);
         }
