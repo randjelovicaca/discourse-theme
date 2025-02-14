@@ -16,6 +16,20 @@
         if (linkElement.length) {
             linkElement.attr("href", `https://rhinodigital.typeform.com/redditquest#name=${username}`);
         }
+
+        // Locate the correct article with the specified post ID
+        const article_2 = $("article[data-post-id='125905']");
+        
+        // Find the paragraph that contains the specific 'Reddit Quest' link
+        const linkElement_2 = article_2.find("a[href='https://rhinodigital.typeform.com/youtubequest']");
+        
+        if (linkElement_2.length) {
+            linkElement_2.attr("href", `https://rhinodigital.typeform.com/youtubequest#name=${username}`);
+        }
+
+
+
+
     }
 });
 </script>
